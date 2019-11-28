@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AppCalculadora</string>
+    <string name="texto">CALCULADORA</string>
+    <string name="numberSeven">7</string>
+    <string name="numberEight">8</string>
+    <string name="numberNine">9</string>
+    <string name="numberFour">4</string>
+    <string name="numberFive">5</string>
+    <string name="numberSix">6</string>
+    <string name="numberOne">1</string>
+    <string name="numberTwo">2</string>
+    <string name="numberThree">3</string>
+    <string name="numberZero">0</string>
+    <string name="memory">MR</string>
+    <string name="point">.</string>
+    <string name="OperadorEqual">=</string>
+    <string name="clean">C</string>
+    <string name="operatorSum">+</string>
+    <string name="operatorRest">-</string>
+    <string name="operatorMult">x</string>
+    <string name="operatorRoot">√</string>
+    <string name="operatorPow">^</string>
+    <string name="operatorDiv">÷</string>
+    <string name="mostrar">MOSTRAR</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="texto2">CALCULADORA</string>
+
+</resources>

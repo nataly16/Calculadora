@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/texto"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="387dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/texto"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="80dp"
+        android:ems="15"
+        android:gravity="right|bottom"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
+
+    <GridLayout
+        android:layout_width="402dp"
+        android:layout_height="383dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="56dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado">
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onReset"
+            android:text="@string/clean"
+            android:textColor="#03A9F4"
+            android:textColorHint="#00BBB6B6" />
+
+        <Button
+            android:id="@+id/root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onRoot"
+            android:text="@string/operatorRoot"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/pow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onPow"
+            android:text="@string/operatorPow"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onDiv"
+            android:text="@string/operatorDiv"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onSeven"
+            android:text="@string/numberSeven" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onEight"
+            android:text="@string/numberEight" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onNine"
+            android:text="@string/numberNine" />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onMult"
+            android:text="@string/operatorMult"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onFour"
+            android:text="@string/numberFour" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onFive"
+            android:text="@string/numberFive" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onSix"
+            android:text="@string/numberSix" />
+
+        <Button
+            android:id="@+id/rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onRest"
+            android:text="@string/operatorRest"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onOne"
+            android:text="@string/numberOne" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onTwo"
+            android:text="@string/numberTwo" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onThree"
+            android:text="@string/numberThree" />
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onSum"
+            android:text="@string/operatorSum"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onMemory"
+            android:text="@string/memory"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onZero"
+            android:text="@string/numberZero" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onPoint"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onEqual"
+            android:text="@string/OperadorEqual"
+            android:textColor="#03A9F4" />
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="400dp"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:background="@drawable/boton_redondo"
+            android:onClick="onMostra"
+            android:text="@string/mostrar"
+            android:textColor="#03A9F4" />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
